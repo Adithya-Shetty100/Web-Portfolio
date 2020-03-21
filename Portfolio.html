@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="Portfolio.css">
+
+       <!-- owl carousel css  -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+       
+
+<body>
+  
+
+  <!-- NAVBAR -->
+
+    <nav id="header" class="navbar navbar-expand-sm navbar-inverse  fixed-top">
+        <a class="navbar-brand" href="#">PORTFOLIO</a>
+        
+        <button  class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"><i id="hamburger" class="fas fa-bars outline-primary"></i></span>
+        </button>
+   
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- <ul class="navbar-nav mr-auto">
+           
+          </ul> -->
+          <ul class="navbar-nav nav-pills ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link active" href="#jumbo">Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#resume">Resume</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#work">Work</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skill">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#jumbo1">Contact</a>
+              </li> 
+          </ul>
+        </div>
+    
+      </nav>
+     
+      <!-- JUMBOTRON -->
+      
+      <!-- scrollspy -->
+
+      <div id="jumbo" class="jumbotron text-center">
+        <p id="jam"class="lead"><span class="top">Hi</span><span class="top">  I </span><span class="top">am,</span></p>
+        <h1 id="jam1" class="display-3  mt-0 "> <span class="top1">Adithya</span> <span class="top1"> Shetty</span></h1>
+        <p id="jam2" class="lead "> <span class="top"> Web</span> <span class="top"> Developer</span> <span class="top"> :)</span> </p>
+       
+      </div>
+
+
+      <!-- ABOUT -->
+      
+      <div data-spy="scroll" data-target="#header" data-offset="0">
+      
+      <div class="container-fluid  " id="two">
+        <!-- container-fluid to make grid stretch over entire page instead of staying in center like in container -->
+          <div class="row " id="section2">
+            <div class="col-sm-6 mt-4 order-2 order-sm-1 px-0">
+                <img src="https://images.unsplash.com/photo-1567168539593-59673ababaae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60‪" 
+                class="img-fluid" id="car2" alt="" >
+               
+                <!-- data:image/jpeg;base64,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
+                THis is my actual image, I didn't put it as it was too pixelated when enlarged -->
+                <!-- class="img-fluid" to make responsive images -->
+            </div>
+
+            <div class="col-sm-6 text-center align-self-center mt-4 order-1 order-sm-2">
+              <!-- order helps in setting the order of grid contents -->
+                <div class="px-2 ">
+                  <h2 id="about"> ABOUT<i class="fas fa-laptop-code btn-lg d-none d-md-block" id="us"></i></h2>
+                  
+                  <p class="lead pr-md-5"> Hi, I am a student of PES University. I am passionate about working in the feild of web and app development.
+                    I would like to work on projects which can impact the lives of many people. I am a first-year student and looking for internships this summer.I am a <u> front-end web developer</u> and a web-designer.
+                  </p>
+                
+                </div> 
+              </div>
+          </div>
+        </div>
+ 
+
+          <!-- RESUME -->
+          <div class="skl">
+          <h2 class=" sk" id="resume"> RESUME<i class="fas fa-laptop-code btn-lg d-none d-md-block" id="us"></i></h2>
+          
+          <div class="d-flex  justify-content-between flex-column flex-sm-row  m-4">
+           
+            <div class="col-sm-6 p-2 bod">
+              <table>
+                <tr>
+                  <td>Name</td>
+                  <td>Adithya B Shetty</td>
+                </tr>
+
+                <tr>
+                  <td>Age</td>
+                  <td>19 years</td>
+                </tr>
+
+                <tr>
+                  <td>Birthday</td>
+                  <td> 2nd Dec, 2000</td>
+                </tr>
+
+                <tr class="pt-0">
+                  <td class="align-text-top"> Languages</td>
+                  <td><ul><li>English</li><li>Kannada</li><li>Tulu</li></ul>  </td>
+                </tr>
+
+                <tr>
+                  <td>Qualification</td>
+                  <td> B.tech first year</td>
+                </tr>
+
+                <tr><td class="align-text-top">Hobbies</td>
+                <td>
+                  <ul><li>Quiz</li><li>Cricket</li><li>Coding</li></ul>  </td></tr>
+
+                <tr><td class="align-text-top">Clubs</td>
+                  <td><ul><li>QQC quiz club</li><li>IEEE RAS Chapter</li></ul></td></tr>
+              </table>
+              <br>
+              <p class="lead">Address</p>
+              <p>No.K-1, "Sri Sai Ram Enclave", Door No.102, 4th Main, 4th Cross, MICO layout,Btm 2nd Stage,
+                Bangalore-76
+              </p>
+              <p class="lead">Volunteer Experience</p>
+              <ul><li>Social work</li><li>Core member for QQC Conquiztador National level quiz, PESU</li>
+                <li>Core member for quiz events held during Atmatrisha 2020</li></ul>
+
+              
+            </div>
+            
+          
+          
+          <div class="col-sm-6 p-2 mr-5">
+            <p class="lead">Education</p>
+            <p><u> St. Paul's English School</u></p>
+            <p class="content"> Till Grade 12, Class 10- 98%, Class 12- 95%</p>
+            <p class="year">2005-2019</p>
+            <br/>
+            <p><u> PES University, RR Campus</u></p>
+            <p class="content"> Semester 1- 8.36 SGPA; Was awarded Distinction  </p>
+            <p class="year">2019-2023</p>
+            <br/>
+            <p class="lead">Certifications</p>
+            <p>My Captain</p>
+            <ul><li class="content">Web development- Oct 2019</li>
+            <li class="content">Android app development- Jan 2020</li></ul>
+            <p>PESU I/O</p>
+            <ul><li class="content">Computer Vision- Sept 2019</li></ul>
+            
+           
+
+          </div>
+          </div>
+        </div>
+
+          <!-- WORK -->
+
+          <!-- method of using carousel --> 
+          <h2 class=" sk" id="work"> WORK<i class="fas fa-laptop-code btn-lg d-none d-md-block" id="us"></i></h2>
+          <br>
+          <br>
+          <div class="response">
+          <div id="Indicators" class="carousel slide" data-ride="carousel">
+           
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                
+                <div class="card ml-5 float-left" style="width: 18rem;">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSb6AlAfJfDx-SZaecrJBplesDdkrWX5ZM4FAjX6_N1ToISMpxn" class="card-img-top" alt="...">
+                  <div class="card-body ">
+                    <br>
+                    <h5 class="card-title">DOTSLASH 2.0</h5>
+                    <p class="card-text"><em> We participated in a 24 hr hackathon in PESU and created a website for home-made food delivery.</em></p>
+                    <a href="https://github.com/Adithya-Shetty100/Homely" class="btn btn-outline-success btn-sm " target="_blank"> View</a>
+                <a href="#work" class="btn btn-outline-danger btn-sm select"><i class="far fa-heart"></i></a>
+                  </div>
+                
+                </div>
+
+                <div class="card ml-5  d-none d-lg-block float-left" style="width: 18rem;">
+                  <img src="https://cdn.instructables.com/FDS/EG5J/JB3ZQA8X/FDSEG5JJB3ZQA8X.LARGE.jpg?auto=webp&frame=1" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <br>
+                    <h5 class="card-title">TIC TAC TOE</h5>
+                    <p class="card-text"><em> We created a tic-tac-toe game using python for our first sem project.</em></p>
+                    <br>
+                    <a href="https://github.com/Adithya-Shetty100/Tic-Tac-Toe" target="_blank" class="btn btn-outline-success btn-sm "> View</a>
+                <a href="#work" class="btn btn-outline-danger btn-sm select1"><i class="far fa-heart"></i></a>
+                  </div>
+                </div>
+
+                <div class="card ml-5  float-left" style="width: 18rem;">
+                  <img src=" https://images.unsplash.com/photo-1571830108025-e38bba4277a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60‪" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <br>
+                    <h5 class="card-title">CAR BOOKING</h5>
+                    <p class="card-text"><em> I created a landing page for a fictional car rental company as a pass-time projecct.</em></p>
+                    <br>
+                    <a href="https://github.com/Adithya-Shetty100/Carspace" class="btn btn-outline-success btn-sm " target="_blank" > View</a>
+                <a href="#work" class="btn btn-outline-danger btn-sm select2"><i class="far fa-heart"></i></a>
+                  </div>
+                </div>
+              
+            </div>
+
+              <div class="carousel-item">
+                
+                <div class="card ml-5 float-left" style="width: 18rem;">
+                  <img src="https://media.wired.com/photos/5c9040ee4950d24718d6da99/125:94/w_2393,h_1800,c_limit/shoppingcart-1066110386.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <br>
+                    <h5 class="card-title">ONLINE SHOPPING</h5>
+                    <p class="card-text"><em> I created a platform for shopping books from a given list using JAVA, as my 10th grade project.</em></p>
+                    <br>
+                    <a href="https://github.com/Adithya-Shetty100/online-shopping" target="_blank" class="btn btn-outline-success btn-sm "> View</a>
+                <a href="#work" class="btn btn-outline-danger btn-sm select3"><i class="far fa-heart"></i></a>
+              </div>
+              </div>
+
+               <div class="card ml-5   float-left " style="width: 18rem;">
+                <img src="https://raw.githubusercontent.com/danieldogeanu/ScoreKeeper/master/app/src/main/res/drawable/score_keeper_screenshot.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <br>
+                  <h5 class="card-title">SCOREKEEPER</h5>
+                  <p class="card-text"><em>I created a platform using javascript to keep track of matches played, won and lost.</em></p>
+                  <br>
+                  
+                  <a href="https://github.com/Adithya-Shetty100/Scorekeeper" target="_blank" class="btn btn-outline-success btn-sm "> View</a>
+              <a href="#work" class="btn btn-outline-danger btn-sm select4"><i class="far fa-heart"></i></a>
+            </div> 
+            </div>  
+          
+          </div> 
+
+          <!-- <ol class="carousel-indicators">
+            <li data-target="#Indicators" data-slide-to="0" class="active"></li>
+            <li data-target="#Indicators" data-slide-to="1" class="act"></li>
+          </ol> -->
+
+            <a class="carousel-control-prev" href="#Indicators" role="button btn-warning" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              
+            </a>
+            <a class="carousel-control-next" href="#Indicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+             
+            </a>
+          </div> 
+          <br>
+          <br>
+        </div>
+
+		
+
+
+          <!-- SKILLS -->
+
+          <h2 class=" sk" id="skill">SKILLS<i class="fas fa-laptop-code btn-lg d-none d-md-block" id="us"></i></h2>
+          <br>
+          <div class="container">
+            <p>HTML 5</p>
+            <div class="box">
+              <div id="html">95</div>
+            </div>
+
+            <p>CSS 3</p>
+            <div class="box">
+                <div class="css"> 85</div>
+            </div>
+
+            <p>Bootstrap 4</p>
+            <div class="box">
+              <div class="boot"> 90</div>
+            </div>
+
+            <p>Microsoft Office</p>
+            <div class="box">
+              <div class="ms">90</div>
+            </div>
+
+            <p>Javascript</p>
+            <div class="box">
+              <div class="js">75</div>
+            </div>
+
+            <p>jQuery</p>
+            <div class="box">
+              <div class="jq">65 </div>
+            </div>
+
+            <p>Teamwork</p>
+            <div class="box">
+              <div class="team">95 </div>
+            </div>
+            <br>
+            <br>
+          </div>
+
+
+          <!-- CONTACT -->
+
+          <div id="jumbo1" class="jumbotron">
+              <div class="row justify-content-between  mt-4">
+                <div class="col-md-6"> 
+                    <!-- for xs( extra small enter col-6 as col-xs-6 does not exist) -->
+                    <br/>
+                    <br/>
+                    <h1 id="contact">CONTACT ME</h1>
+                    <p> <i class="fas fa-phone-alt"></i> Phone No: 9705322256 </p>
+                    <p> <i class="fas fa-paper-plane"></i> Email : adithyabshetty100@gmail.com</p>
+                    <form>
+                        <br/>
+                   <p> Subscribe to my newsletter: </p> <input type="email" name="email"
+                    placeholder="Enter ur email" required>
+                    <input type="submit" value="OK" class="ok">
+                  </form>
+                  
+                </div>
+  
+                 <div class="col-md-4 mt-2 mt-sm-0"> 
+                      <br/>
+                      <br/>
+                 <h3>FOLLOW ME ON</h3>
+                 <a href="https://www.instagram.com/adithya_100/?hl=en" class="btn btn-outline-warning btn-lg" target="_blank" > <i id="in"class="fab fa-instagram btn-lg"></i></a>
+                  <a href=" https://www.linkedin.com/in/adithya-shetty-1800a/" class="btn btn-outline-warning btn-lg" target="_blank"><i class="fab fa-linkedin"></i></a> 
+                  <a href="https://github.com/Adithya-Shetty100" class="btn btn-outline-warning btn-lg" target="_blank"><i class="fab fa-github"></i></a>
+                 
+              </div>
+            </div>
+        </div>
+    </div>
+  </div>
+         
+      
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  
+    <script type="text/javascript" src="Portfolio.js"></script>
+
+
+    <!-- owl carousel for card slider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+   
+  </body>
+</html>
