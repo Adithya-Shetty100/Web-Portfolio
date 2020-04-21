@@ -1,4 +1,4 @@
-   /* body{
+ /* body{
   background: url("https://www.pixelstalk.net/wp-content/uploads/2016/08/Best-Site-For-HD-Backgrounds-Free-Download.jpg" )
   center top/cover no-repeat;
   position: relative;
@@ -24,6 +24,7 @@
 #jumbo{
   background: url("https://thesocietyband.com/wp-content/uploads/2015/09/Free-Download-Background-Images-For-Website-Design-3.jpg" )
   center center/cover no-repeat;
+ height:400px;
   padding-bottom: 80px;
 }
 
@@ -34,9 +35,14 @@
   padding-top: 30px;padding-bottom: 3opx;
 }
 
+.bod{
+  border-right:1px solid greenyellow;
+}
+
 @media(max-width:575px) {
   /* body{background-color: coral;} */
  #jam1{font-size:3rem;}
+ .bod{border-right:none ;}
  /* line-height: 2em; */
    
 }
@@ -93,7 +99,8 @@
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
   /* transition: 0.8s; */
-  animation: html 8s ease-out 2s;
+  animation: html 6s ease-out 2s;
+  animation-iteration-count: infinite;
 }
 
 .css{
@@ -103,7 +110,8 @@
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
   /* transition: 0.8s; */
-  animation: css 8s ease-out 2s;
+  animation: css 6s ease-out 2s;
+  animation-iteration-count: infinite;
 }
 
 .js{
@@ -113,7 +121,8 @@
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
   /* transition: 0.8s; */
-  animation: js 8s ease-out 2s;
+  animation: js 6s ease-out 2s;
+  animation-iteration-count: infinite;
 }
 
 .boot{
@@ -123,7 +132,8 @@
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
   /* transition: 0.8s; */
-  animation: boot 8s ease-out 2s;
+  animation: boot 6s ease-out 2s;
+  animation-iteration-count: infinite;
 }
 
 .ms{
@@ -133,7 +143,8 @@
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
   /* transition: 0.8s; */
-  animation: ms 8s ease-out 2s;
+  animation: ms 6s ease-out 2s;
+  animation-iteration-count: infinite;
 }
 
 .jq{
@@ -143,8 +154,8 @@
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
   /* transition: 2s; */
-  animation: jq 8s ease-out 2s;
-  
+  animation: jq 6s ease-out 2s;
+  animation-iteration-count: infinite;
 }
 
 .team{
@@ -154,7 +165,8 @@
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
   /* transition: 0.8s; */
-  animation: team  8s ease-out 2s ;
+  animation: team  6s ease-out 2s ;
+  animation-iteration-count: infinite;
 }
 
 @keyframes html{
@@ -238,10 +250,6 @@ td{
 .carousel-control{
   background-color: black;
  
-}
-
-.bod{
-  border-right:1px solid greenyellow;
 }
 
 .card:hover{
